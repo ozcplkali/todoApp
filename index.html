@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>toDo</title>
+     <link rel="stylesheet" href="style.css">
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"      rel="stylesheet">
+
+
+     
+</head>
+<body>
+
+
+     <div class="title">
+          <h3>Write..</h3>
+     </div>
+     <div class="container">
+          
+
+          <div class="searchcontainer">
+               <input type="text"  id="searchbar" value="Search a task">
+               
+               <button class="btnAddTask">Add new todo</button>
+          </div>
+          <div class="todos">
+               <div class="todo">Some Task Stuff
+                    <div class="detailsClass">
+                         <p class="datetimedetail">12/12/2024</p>
+                         <textarea class="details" rows="2">Some Details Bla Bla Bla</textarea> 
+                         
+                    </div>
+                    <i class="fa-solid fa-trash cop" ></i>
+               </div>
+
+               
+
+               <div class="todo">Some Task Stuff
+                    <div class="detailsClass">
+                         <p class="datetimedetail">12/12/2024</p>
+                         <textarea class="details" rows="2">Some Details Bla Bla Bla</textarea> 
+                    </div>
+                    <i class="fa-solid fa-trash cop" ></i>
+               </div>
+               
+               <div class="todo">Some Task Stuff
+                    <div class="detailsClass">
+                         <p class="datetimedetail">12/12/2024</p>
+                         <textarea class="details" rows="2">Some Details Bla Bla Bla</textarea> 
+                    </div>
+                    <i class="fa-solid fa-trash cop" ></i>
+               </div>
+          </div>
+          
+     </div>
+
+
+
+
+
+          <!-- popup section -->
+     <div class="TaskPopupWrapper">
+          
+          <div class="AddTaskPopup">
+               <span class="close">X</span>
+               <!-- Required task name entry section -->
+               <div class="tasknameContainer">
+                    <p class="popupTexts">Enter Your Task</p>
+                    <input type="text" id="taskName">
+               </div>
+
+               <!-- optional adding task date section -->
+               <div class="taskDateContainer">
+                    <p class="popupTexts">Task due date <span class="dimmed">optional</span></p>
+                    <input type="date"  id="taskDate">
+               </div>
+               <!-- optional add description section -->
+               <div class="taskDescriptionContainer">
+                    <p class="popupTexts">Task Description <span class="dimmed">optional</span></p>
+                    <textarea  id="taskDetails" rows="2" ></textarea>
+               </div>
+
+               <button class="btnAddTask2" >Add Task</button>
+
+
+          </div>
+     </div>
+     
+
+
+
+     <script src="https://kit.fontawesome.com/36cb1facfd.js" crossorigin="anonymous"></script>
+     <script src="script.js"></script>
+</body>
+</html>
